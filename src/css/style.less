@@ -1,0 +1,137 @@
+@media (max-width: 1024px) {
+  div.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  h1.header {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+
+  div hr {
+    margin-left: 5%;
+    width: 70%;
+  }
+  
+  .tablet {
+    width: 50%;
+  }
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 15% 10% 5% 5% 10% 35%;
+  grid-template-rows: 90px 50px 50px 50px 50px 50px 90px;
+}
+
+.header {
+  grid-column: 2 / span 5;
+  grid-row: 1 / span 1;
+  justify-self: end;
+
+  font-size: 42px;
+  font-family: 'Montserrat', sans-serif;
+
+  padding: 0 0 20px 20px;
+  margin-top: 15px;
+}
+
+hr {
+  grid-column: 2 / span 5;
+  grid-row: 1 / span 1;
+  align-self: end;
+
+  width: 76%;
+  height: .6px;
+  margin: 5px 0 15px auto;
+}
+
+p.balance {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+input[name=balance] {
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 1;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+
+  border: 0.5px solid #b6bfe9;
+  border-radius: 2px 2px 2px 2px;
+  padding-left: 10px;
+  margin-bottom: 2px;
+}
+
+p.rate {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
+
+input[name=rate] {
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 1;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+
+  border: 0.5px solid #b6bfe9;
+  border-radius: 2px 2px 2px 2px;
+  padding-left: 10px;
+  margin-bottom: 2px;
+}
+
+p.term {
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+}
+
+select[name=term] {
+  grid-column: 3 / span 2;
+  grid-row: 4 / span 1;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+
+  border: 0.5px solid #b6bfe9;
+  border-radius: 2px 2px 2px 2px;
+  padding-left: 10px;
+  margin-bottom: 2px;
+}
+
+button[name=submit] {
+  grid-column: 3 / span 2;
+  grid-row: 5 / span 1;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+
+  background-color: #d1e5ff;
+  border: 1px solid #b4cef0;
+  border-radius: 2px 2px 2px 2px;
+
+}
+
+p.label {
+  grid-column: 2 / span 1;
+  grid-row: 7 / span 1;
+  align-self: start;
+}
+
+p#output {
+  grid-column: 3 / span 4;
+  grid-row: 6 / span 2;
+  justify-self: start;
+  
+  font-size: 64px;
+  margin-top: 45px;
+  margin-bottom: 55px;
+}
