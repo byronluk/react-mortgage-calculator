@@ -72,7 +72,13 @@ export default class App extends React.Component {
           <option value="15">15</option>
           <option value="30">30</option>
         </select>
-        <button name="submit" className="tablet" onClick={ () => this.calculate(this.state) }>Calculate</button>
+        <button
+          name="submit"
+          className="tablet"
+          onClick={ () => this.calculate(this.state) }
+        >
+          Calculate
+          </button>
         <p className="label">Monthly Payments:</p>
         <p id="output" className="output">{ this.state.output }</p>
       </div>
